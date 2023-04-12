@@ -56,11 +56,14 @@ body {
 }
 
 .logo-one {
+  margin-left: 156px;
   color: #4d5ae5;
 }
 .logo-two {
+  margin-right: 56px;
   color: var(--main-color);
 }
+
 .logo-three {
   color: #f4f4fd;
 }
@@ -107,6 +110,25 @@ body {
 .top-line {
   background-color: #ffffff;
 }
+
+.top-line-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -117,6 +139,11 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
+}
+
+.list {
+  display: flex;
+  align-items: center;
 }
 
 .contact {
