@@ -51,8 +51,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -66,6 +65,14 @@ body {
 
 .logo-three {
   color: #f4f4fd;
+}
+
+.logo-space {
+  margin-right: 76px;
+}
+
+.logo-space-footer {
+  margin-bottom: 16px;
 }
 
 .section-title {
@@ -115,17 +122,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .menu {
   display: flex;
   align-items: center;
+}
+
+.menu-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-item:not(:last-child) {
@@ -142,10 +155,6 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
-}
-
-.logo-space {
-  margin-right: 76px;
 }
 
 .list {
@@ -171,8 +180,8 @@ body {
   color: var(--accent-color);
 }
 
-.contact-mail {
-  margin-right: 40px;
+.contact-space {
+  gap: 40px;
 }
 
 /*====================== /HEADER =========*/
@@ -185,23 +194,25 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-right: 316px;
-  padding-left: 316px;
+  max-width: 496px;
   padding-bottom: 48px;
-}
-.modal-btn {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
   border-radius: 4px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  max-width: 496px;
+  height: 56px;
+  border: none;
 }
 
 .modal-btn:hover,
@@ -210,17 +221,16 @@ body {
 }
 
 .hero {
-  display: flex;
+  display: block;
   align-items: center;
   background-color: #2e2f42;
 }
 
 .hero-container {
-  display: flex;
+  display: block;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 188px;
-  margin-bottom: 188px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 /*====================== /HERO =========*/
@@ -228,17 +238,29 @@ body {
 /*===================== IDEA=============*/
 
 .idea-container {
+  align-items: center;
   padding-top: 120px;
   padding-bottom: 120px;
   gap: 24px;
+}
+.list-idea {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /*===================== /IDEA=============*/
 
 /*================ WHAT R WE DOING=======*/
 
+.third-container {
+  padding-bottom: 120px;
+}
+
 .img-container {
   gap: 24px;
+}
+
+.img-list {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /*================ /WHAT R WE DOING=======*/
@@ -256,12 +278,18 @@ body {
   border-radius: 0px 0px 4px 4px;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .employees-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+}
+
+.employee-card {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /*================/TEAM=================*/
@@ -275,13 +303,17 @@ body {
 }
 
 .text-color-white {
-  margin-top: 17.5px;
   width: 246px;
   color: #f4f4fd;
 }
 
 /*===================FOOTER=================*/
 /*=================PORTFOLIO============*/
+
+.buttons-imgs {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .modal-btns {
   background: #f4f4fd;
@@ -297,7 +329,9 @@ body {
   background: #404bbf;
 }
 .text-btns {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -307,19 +341,22 @@ body {
 .text-btns:hover,
 .text-btns:focus {
   color: #ffffff;
+  border: 1px solid transparent;
 }
 
 .btn-list {
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   padding-left: 271px;
   padding-right: 271px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
 }
 
 .offer-list {
   flex-wrap: wrap;
-  padding-bottom: 120px;
+}
+.project-card {
+  flex-basis: calc((100% - 48px) / 3);
 }
 .project-card:not(:nth-child(3n)) {
   margin-right: 24px;
@@ -331,6 +368,9 @@ body {
 .offer-card {
   background: #ffffff;
   border: 1px solid #e7e9fc;
+  border-top: none;
   padding-bottom: 32px;
   padding-top: 32px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
