@@ -69,6 +69,8 @@ body {
 
 .logo-space {
   margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-space-footer {
@@ -211,6 +213,7 @@ body {
   background-color: #4d5ae5;
   border-radius: 4px;
   max-width: 496px;
+  min-width: 169px;
   height: 56px;
   border: none;
 }
@@ -224,13 +227,13 @@ body {
   display: block;
   align-items: center;
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-container {
   display: block;
   align-items: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 /*====================== /HERO =========*/
