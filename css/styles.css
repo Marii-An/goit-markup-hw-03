@@ -69,8 +69,6 @@ body {
 
 .logo-space {
   margin-right: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .logo-space-footer {
@@ -131,6 +129,8 @@ body {
 .navigation {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu {
