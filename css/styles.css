@@ -129,18 +129,11 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-}
-
-.menu-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .menu-item:not(:last-child) {
@@ -153,6 +146,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .menu-link:hover,
 .menu-link:focus {
